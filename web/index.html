@@ -8,11 +8,17 @@
     <title>My Leetcode</title>
     <link rel="stylesheet" href="static/css/style.css">
     <script defer src="static/js/run.js"></script>
+
 </head>
 
 <body style="margin: 0px; background-color: rgb(247,248,250);">
     <div class="lc">
         <div class="lc-home">
+
+            <div id="change">
+                <div id="run-circle"></div>
+            </div>
+
             <a href="#">
                 <div id="up">返回顶部
 
@@ -32,7 +38,15 @@
                         <li class="lc-head-nav-right-learn">竞赛</li>
                         <li class="lc-head-nav-right-learn">讨论</li>
                         <li class="lc-head-nav-right-learn">求职</li>
-                        <li class="lc-head-nav-right-shop">
+                        <li id="shop">
+                            <div id="hidden">
+                                <ul class="list">
+                                    <li class="listcontent">精品商场</li>
+                                    <li class="listcontent">力扣周边</li>
+                                    <li class="listcontent">Plus会员</li>
+                                </ul>
+                            </div>
+
                             <div class="lc-head-nav-right-shop-font">
                                 商店
                             </div>
@@ -41,6 +55,7 @@
                                 <path fill-rule="evenodd" d="M7 10l5 5 5-5z"></path>
                             </svg>
                         </li>
+                        <script src="static/js/shop.js"></script>
                     </ul>
                     <div class="lc-head-nav-left">
                         <button class="lc-head-nav-left-vip">
@@ -53,7 +68,7 @@
                                 d="M5 5a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5zm2 1a1 1 0 011-1h8a1 1 0 011 1v10a1 1 0 01-1 1H8a1 1 0 01-1-1V6zm5 14a1 1 0 100-2 1 1 0 000 2z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <div class="lc-head-nav-left-left">
+                        <div id="login-btn">
                             <span class="lc-head-nav-right-register">注册</span>
 
                             <span class="lc-head-nav-right-learn" style="margin: 0 15px;font-size: 13px;">或</span>
@@ -74,7 +89,8 @@
 
                                 </div>
                                 <div class="lc-content-left-top-left-middle">点击标签栏里的 「暖春 Offer 计划」 标签或点击头图，可以进入完整专栏
-                                    在上一期中，我们了解了春招的热门岗位， 需要补课的同学可以点击👉🏻 传送门:快人一步,offer 收割机就是你 | 春招热门岗位 本期，学习君将带大家一块了解多家
+                                    在上一期中，我们了解了春招的热门岗位， 需要补课的同学可以点击👉🏻 传送门:快人一步,offer 收割机就是你 | 春招热门岗位
+                                    本期，学习君将带大家一块了解多家
                                     热招企业。 🕗 求职树洞 在开始咱们今天的话题前，学习君想给大家分享刚</div>
                                 <div class="lc-content-left-top-left-bottom">
                                     <span class="lc-content-left-top-left-bottom-left">
@@ -173,119 +189,225 @@
                                             clip-rule="evenodd"></path>
                                     </svg>
                                 </div>
-                                <div class="lc-content-left-top-main-top-company">
-                                    <a href="https://leetcode.cn/company/huawei/discuss/latest/">
-                                        <div class="lc-content-left-top-main-top-company1">
-                                            <img src="https://pic.leetcode-cn.com/d2e85988beccb271af4b1a8f4767e4bdf4c085aaf5aaef093347d778e4e138d7-20.png"
-                                                alt="华为" class="company-logo">
-                                            <div class="lc-content-left-top-main-top-company1-name">华为</div>
-                                            <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
-                                            <span class="lc-content-left-top-main-top-company1-num">6,533</span>
-                                            <div class="lc-content-left-top-main-top-company1-discuss">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"
-                                                    height="1em" fill="currentColor"
-                                                    class="lc-content-left-top-main-top-company1-chatlogo">
-                                                    <path fill-rule="evenodd"
-                                                        d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
-                                                <span class="lc-content-left-top-main-top-company1-photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="jackvin" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="OliverTH" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="weak chicken" class="photo">
-                                                </span>
-                                            </div>
-                                        </div>
+                                <div id="company">
+                                    <div id="next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"
+                                            height="1em" fill="currentColor" class="">
+                                            <path fill-rule="evenodd"
+                                                d="M9.293 7.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 12 9.293 7.707z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div id="before">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"
+                                            height="1em" fill="currentColor" class="">
+                                            <path fill-rule="evenodd"
+                                                d="M14.707 16.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L10.414 12l4.293 4.293z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
 
-                                    </a>
-                                    <a href="https://leetcode.cn/company/bytedance/discuss/">
-                                        <div class="lc-content-left-top-main-top-company1">
-                                            <img src="https://pic.leetcode-cn.com/1608896124-NAAKhT-images.png"
-                                                alt="字节跳动" class="company-logo">
-                                            <div class="lc-content-left-top-main-top-company1-name">字节跳动</div>
-                                            <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
-                                            <span class="lc-content-left-top-main-top-company1-num">6,398</span>
-                                            <div class="lc-content-left-top-main-top-company1-discuss">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"
-                                                    height="1em" fill="currentColor"
-                                                    class="lc-content-left-top-main-top-company1-chatlogo">
-                                                    <path fill-rule="evenodd"
-                                                        d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
-                                                <span class="lc-content-left-top-main-top-company1-photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="jackvin" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="OliverTH" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="weak chicken" class="photo">
-                                                </span>
+                                    <div id="companylist">
+                                        <a href="https://leetcode.cn/company/huawei/discuss/latest/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://pic.leetcode-cn.com/d2e85988beccb271af4b1a8f4767e4bdf4c085aaf5aaef093347d778e4e138d7-20.png"
+                                                    alt="华为" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">华为</div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,533</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    </a>
-                                    <a href="https://leetcode.cn/company/amazon/discuss/latest/">
-                                        <div class="lc-content-left-top-main-top-company1">
-                                            <img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploaded_files/2022/09/e9108030-576a-4a77-8539-75de09ce5a5a/%E5%85%AC%E5%8F%B8%20Logo%E7%9A%84%E5%89%AF%E6%9C%AC.png"
-                                                alt="亚马逊" class="company-logo">
-                                            <div class="lc-content-left-top-main-top-company1-name">亚马逊</div>
-                                            <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
-                                            <span class="lc-content-left-top-main-top-company1-num">6,373</span>
-                                            <div class="lc-content-left-top-main-top-company1-discuss">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"
-                                                    height="1em" fill="currentColor"
-                                                    class="lc-content-left-top-main-top-company1-chatlogo">
-                                                    <path fill-rule="evenodd"
-                                                        d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
-                                                <span class="lc-content-left-top-main-top-company1-photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="jackvin" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="OliverTH" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="weak chicken" class="photo">
-                                                </span>
+                                        </a>
+                                        <a href="https://leetcode.cn/company/bytedance/discuss/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://pic.leetcode-cn.com/1608896124-NAAKhT-images.png"
+                                                    alt="字节跳动" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">字节跳动</div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,398</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    </a>
-                                    <a href="https://leetcode.cn/company/microsoft/discuss/latest/">
-                                        <div class="lc-content-left-top-main-top-company1">
-                                            <img src="https://pic.leetcode-cn.com/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png"
-                                                alt="微软" class="company-logo">
-                                            <div class="lc-content-left-top-main-top-company1-name">微软</div>
-                                            <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
-                                            <span class="lc-content-left-top-main-top-company1-num">6,207</span>
-                                            <div class="lc-content-left-top-main-top-company1-discuss">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"
-                                                    height="1em" fill="currentColor"
-                                                    class="lc-content-left-top-main-top-company1-chatlogo">
-                                                    <path fill-rule="evenodd"
-                                                        d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                                <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
-                                                <span class="lc-content-left-top-main-top-company1-photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="jackvin" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="OliverTH" class="photo">
-                                                    <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
-                                                        alt="weak chicken" class="photo">
-                                                </span>
+                                        </a>
+                                        <a href="https://leetcode.cn/company/amazon/discuss/latest/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploaded_files/2022/09/e9108030-576a-4a77-8539-75de09ce5a5a/%E5%85%AC%E5%8F%B8%20Logo%E7%9A%84%E5%89%AF%E6%9C%AC.png"
+                                                    alt="亚马逊" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">亚马逊</div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,373</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    </a>
+                                        </a>
+                                        <a href="https://leetcode.cn/company/microsoft/discuss/latest/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://pic.leetcode-cn.com/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png"
+                                                    alt="微软" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">微软</div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,207</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="https://leetcode.cn/company/huawei/discuss/latest/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://pic.leetcode-cn.com/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png"
+                                                    alt="谷歌" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">谷歌</div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,533</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="https://leetcode.cn/company/huawei/discuss/latest/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://assets.leetcode-cn.com/aliyun-lc-upload/tag/%E7%99%BE%E5%BA%A6/company_logo"
+                                                    alt="百度" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">百度</div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,533</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <a href="https://leetcode.cn/company/huawei/discuss/latest/">
+                                            <div class="lc-content-left-top-main-top-company1">
+                                                <img src="https://pic.leetcode-cn.com/f8fd5b104aa30bbd9bba7cf428a63e8c130f1665876e6afa52186d9510936517-fb_icon_325x325.png"
+                                                    alt="Facebook" class="company-logo">
+                                                <div class="lc-content-left-top-main-top-company1-name">Facebook
+                                                </div>
+                                                <span class="lc-content-left-top-main-top-company1-hot">热门指数</span>
+                                                <span class="lc-content-left-top-main-top-company1-num">6,533</span>
+                                                <div class="lc-content-left-top-main-top-company1-discuss">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="1em" height="1em" fill="currentColor"
+                                                        class="lc-content-left-top-main-top-company1-chatlogo">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 11.001a9.001 9.001 0 014.974-8.047A8.876 8.876 0 0110.998 2h.535c.018 0 .037 0 .055.002 3.934.218 7.204 3.02 8.15 6.753a1 1 0 01-1.94.49c-.734-2.9-3.27-5.065-6.294-5.245h-.51a6.876 6.876 0 00-3.12.74l-.004.002A7.001 7.001 0 004 11.003v.002a6.873 6.873 0 00.738 3.117c.206.407.271.871.185 1.32l-.387 2.022 2.022-.387c.448-.086.912-.021 1.32.185.44.222.9.395 1.373.518a1 1 0 11-.502 1.936 8.865 8.865 0 01-1.773-.669.067.067 0 00-.042-.006l-3.47.665a1 1 0 01-1.17-1.17l.665-3.47a.067.067 0 00-.006-.043A8.873 8.873 0 012 11.001zM17.004 20h-.005a3 3 0 01-2.68-1.658l-.004-.007A2.936 2.936 0 0114 17.004v-.206a2.995 2.995 0 012.773-2.797l.233-.001c.46-.001.917.107 1.33.315l.007.004A3 3 0 0120 17v.005c.001.425-.09.845-.268 1.232l-.133.29a1 1 0 00-.074.606l.093.485-.484-.093a1 1 0 00-.606.073l-.29.134a2.937 2.937 0 01-1.234.268zm-.296-8A4.995 4.995 0 0012 16.738v.262c-.002.777.18 1.543.53 2.237a5 5 0 006.542 2.313l2.303.441c.365.07.686-.25.616-.615l-.441-2.303a5 5 0 00-2.312-6.541A4.937 4.937 0 0017 12h-.292z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                    <span class="lc-content-left-top-main-top-company1-font">围观讨论</span>
+                                                    <span class="lc-content-left-top-main-top-company1-photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/jackwener/avatar_1539321209.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="jackvin" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/oliverth/avatar_1601906675.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="OliverTH" class="photo">
+                                                        <img src="https://assets.leetcode.cn/aliyun-lc-upload/users/liuyi12138/avatar_1534823165.png?x-oss-process=image%2Fresize%2Ch_32%2Cw_32%2Fformat%2Cwebp"
+                                                            alt="weak chicken" class="photo">
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                    <script src="static/js/company.js"></script>
+
 
                                 </div>
 
@@ -365,10 +487,10 @@
                             </ul>
                             <div class="run-img-bottom">
                                 <ul id="icolist">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li class="circle"></li>
+                                    <li class="circle"></li>
+                                    <li class="circle"></li>
+                                    <li class="circle"></li>
                             </div>
 
                             </ul>
@@ -378,6 +500,25 @@
             </div>
         </div>
     </div>
+    <div id="login">
+
+        <div class="login-main">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"
+                id="delete">
+                <path fill-rule="evenodd"
+                    d="M13.414 12L19 17.586A1 1 0 0117.586 19L12 13.414 6.414 19A1 1 0 015 17.586L10.586 12 5 6.414A1 1 0 116.414 5L12 10.586 17.586 5A1 1 0 1119 6.414L13.414 12z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <img src="https://static.leetcode.cn/cn-mono-assets/production/assets/logo-dark-cn.4c5e285b.svg" alt="logo"
+                class="logo">
+            <input type="tel" name="手机号" id="tel" value placeholder="请输入手机号">
+            <input type="text" value placeholder="验证码" id="tel">
+            <button id="button">登录/注册</button>
+        </div>
+    </div>
+    <script src="static/js/log.js"></script>
+    <script src="static/js/night.js"></script>
+
 </body>
 
 </html>
