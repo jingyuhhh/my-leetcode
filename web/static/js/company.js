@@ -18,3 +18,5 @@ be.onclick = function () {
     }
 
 }
+
+runcompany.style.transition = "all 0.5s ease";

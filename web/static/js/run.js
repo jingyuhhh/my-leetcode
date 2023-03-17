@@ -29,6 +29,7 @@ function change() {
 
         }
     }
+    imglist.style.transition = "all 0.5s ease";
 }
 
 

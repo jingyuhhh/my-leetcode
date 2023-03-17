@@ -19,6 +19,7 @@ echange.onclick = () => {
         for (let i = 0; i < grey.length; i++) {
             for (let j = 0; j < grey[i].length; j++) {
                 grey[i][j].style.backgroundColor = "rgb(40,40,40)";
+                grey[i][j].style.transition = "all 0.5s ease";
             }
         }
 
@@ -29,6 +30,7 @@ echange.onclick = () => {
         console.log(run_circle.style.marginLeft);
         run_circle.style.marginLeft = 25 + "px";
         echange.style.backgroundColor = "lightblue";
+        run_circle.style.transition = "all 0.5s ease"
     }
     else {
         di.style.backgroundColor = "rgb(247,248,250)";
