@@ -23,7 +23,7 @@
                 <div id="up">返回顶部
 
                 </div>
-                <script defer src="/static/js/button.js"></script>
+                <!-- <script defer src="/static/js/button.js"></script> -->
            
 
             <div class="lc-head">
@@ -511,8 +511,8 @@
             </svg>
             <img src="https://static.leetcode.cn/cn-mono-assets/production/assets/logo-dark-cn.4c5e285b.svg" alt="logo"
                 class="logo">
-            <input type="tel" name="手机号" id="tel" value placeholder="请输入手机号">
-            <input type="password" value placeholder="密码" id="pwd">
+            <input type="text" name="手机号" id="tel" value placeholder="请输入手机号" pattern="/^[0-9]{11}&/" maxlength="11" required>
+            <input type="password" value placeholder="密码" id="pwd" required>
             <button id="in-button">登录</button><button id="re-button">注册</button>
         </div>
     </div>
@@ -520,5 +520,5 @@
     <script src="static/js/night.js"></script>
 
 </body>
-
+<script src="static/js/button.js"></script>
 </html>

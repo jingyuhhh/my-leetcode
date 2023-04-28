@@ -1,10 +1,8 @@
 const html = document.documentElement;
 var btn = document.getElementById("up");
 
-console.log(html);
-
 window.onscroll = () => {
-  let scrollDis = document.documentElement.scrollTop;
+  let scrollDis = html.scrollTop;
   if (scrollDis > 500) {
     btn.style.display = "block";
 
