@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Leetcode</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <script defer src="static/js/run.js"></script>
-
 </head>
 
 <body >
@@ -18,14 +16,8 @@
             <div id="change">
                 <div id="run-circle"></div>
             </div>
-
-           
                 <div id="up">返回顶部
-
-                </div>
-                <!-- <script defer src="/static/js/button.js"></script> -->
-           
-
+                </div>           
             <div class="lc-head">
                 <nav class="lc-head-nav">
                     <ul class="lc-head-nav-right">
@@ -511,8 +503,7 @@
             </svg>
             <img src="https://static.leetcode.cn/cn-mono-assets/production/assets/logo-dark-cn.4c5e285b.svg" alt="logo"
                 class="logo">
-
-                   <input type="text" name="手机号" id="tel" value placeholder="请输入手机号"  maxlength="11" required>
+                   <input type="text" name="手机号" id="tel" value placeholder="请输入手机号"  maxlength="11" required pattern="[0-9]{11}">
                     <input type="password" value placeholder="密码" id="pwd" required> 
                     <button id="in-button">登录</button>
                     <button id="re-button">注册</button>
@@ -522,12 +513,14 @@
     </div>
 
     <script src="static/js/night.js"></script>
-    <script src="static/js/log.js"></script>
+    
 </body>
 <script src="static/js/button.js"></script>
 <!-- <script type="module">
     import login from "D:/vscode/fake-leetcode/web/client.js";
 </script> -->
 <script src="client.js"></script>
+<script src="static/js/log.js"></script>
+<script src="static/js/login_change.js"></script>
 
 </html>

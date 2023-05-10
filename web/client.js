@@ -32,9 +32,13 @@ loginbtn.addEventListener("click", function () {
   xhr.send(`username=${username}&password=${password}`);
   xhr.onreadystatechange = debounce(function () {
     if (xhr.status === 200) {
-      if (xhr.responseText !== "") {
-        console.log(xhr.responseText);
-        alert(xhr.responseText);
+      let res = xhr.responseText;
+      if (res !== "") {
+        alert(res);
+      }
+      if (res === "登录成功") {
+        hide();
+        dom();
       }
     }
   }, 500);
@@ -46,8 +50,11 @@ register.addEventListener("click", function () {
   xhr.send(`username=${username}&password=${password}`);
   xhr.onreadystatechange = debounce(function () {
     if (xhr.status === 200) {
-      console.log(xhr.responseText);
-      alert(xhr.responseText);
+      let res = xhr.responseText;
+      alert(res);
+      if (res === "注册成功") {
+        input2.value = "";
+      }
     }
   }, 500);
 });

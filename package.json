@@ -13,7 +13,6 @@
   "description": "这是学前端两周后模仿leetcode的第一个作品",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/volcano621/fake-leetcode.git"
@@ -23,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/volcano621/fake-leetcode/issues"
   },
-  "homepage": "https://github.com/volcano621/fake-leetcode#readme"
+  "homepage": "https://github.com/volcano621/fake-leetcode#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.1",
+    "webpack-cli": "^5.1.1"
+  }
 }

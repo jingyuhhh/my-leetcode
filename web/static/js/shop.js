@@ -1,10 +1,9 @@
-var list = document.getElementById('hidden');
-var shop = document.getElementById('shop');
+var list = document.getElementById("hidden");
+var shop = document.getElementById("shop");
 
 shop.onmouseover = function () {
-    list.style.display = "block";
-    console.log("YES")
-}
+  list.style.display = "block";
+};
 shop.onmouseout = function () {
-    list.style.display = "none";
-}
+  list.style.display = "none";
+};

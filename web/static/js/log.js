@@ -14,24 +14,26 @@ login_button.addEventListener("click", function () {
   login_main.classList.remove("deletelog");
 });
 
-tel.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    if (tel.validity.valueMissing) {
-      tel.classList.add("valuemissing");
-    }
-    if (tel.validity.patternMismatch) {
-      tel.classList.add("valuemissing");
-    }
-  }
-  if (tel.value !== "" && tel.classList.contains("valuemissing")) {
+function Check(tel) {
+  if (tel.validity.valueMissing) {
+    tel.classList.add("valuemissing");
+  } else if (tel.validity.patternMismatch) {
+    tel.classList.add("valuemissing");
+  } else if (tel.classList.contains("valuemissing")) {
     tel.classList.remove("valuemissing");
   }
-});
+}
+
+tel.onblur = function () {
+  Check(tel);
+};
+pwd.onblur = function () {
+  Check(pwd);
+};
 
 del.onclick = function () {
   login_main.classList.add("deletelog");
   login_main.classList.toggle("popup");
-  console.log(login_main.classList);
 
   setTimeout(() => {
     login.style.display = "none";

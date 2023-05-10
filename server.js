@@ -54,6 +54,7 @@ app.post("/login", async (req, res) => {
     res.send("用户不存在");
   } else {
     res.send("登录成功");
+    // res.redirect('/user');
   }
 });
 
